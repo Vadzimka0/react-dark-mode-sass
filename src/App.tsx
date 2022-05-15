@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./styles/index.scss";
 import ThemeProvider from "./components/contexts/ThemeProvider";
 import ThemeSetter from "./components/ThemeSetter";
 
