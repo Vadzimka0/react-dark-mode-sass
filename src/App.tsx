@@ -1,12 +1,15 @@
-import "./App.css";
+import "./App.scss";
+import ThemeProvider from "./components/contexts/ThemeProvider";
+import ThemeSetter from "./components/ThemeSetter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>test dark-light mode</div>
-      </header>
-    </div>
+    <ThemeProvider>
+      <ThemeSetter />
+      <div className="myClass">
+        <h1>Hello World</h1>
+      </div>
+    </ThemeProvider>
   );
 }
 
