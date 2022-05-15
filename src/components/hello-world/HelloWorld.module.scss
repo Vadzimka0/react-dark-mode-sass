@@ -1,6 +1,6 @@
-@import "_theme.scss";
+@import "./../../styles/theme";
 
-.myClass {
+.title {
   @include themed() {
     color: t("text");
     background: t("bg");
