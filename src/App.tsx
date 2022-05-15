@@ -1,11 +1,9 @@
-import "./App.scss";
-import "./styles/index.scss";
 import ThemeProvider from "./components/contexts/ThemeProvider";
 import ThemeSetter from "./components/ThemeSetter";
 import TestComponent from "./components/test-component/TestComponent";
 import HelloWorld from "./components/hello-world/HelloWorld";
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider>
       <ThemeSetter />
@@ -13,6 +11,6 @@ function App() {
       <TestComponent />
     </ThemeProvider>
   );
-}
+};
 
 export default App;

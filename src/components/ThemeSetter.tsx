@@ -3,7 +3,7 @@ import ThemeContext from "./contexts/ThemeContext";
 
 const themeOptions = [{ value: "light" }, { value: "dark" }];
 
-export default function ThemeSetter() {
+const ThemeSetter = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
@@ -15,4 +15,6 @@ export default function ThemeSetter() {
       ))}
     </select>
   );
-}
+};
+
+export default ThemeSetter;

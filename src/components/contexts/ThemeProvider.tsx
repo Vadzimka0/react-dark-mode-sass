@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ThemeContext, { initialThemeState } from "./ThemeContext";
 
 const ThemeProvider = ({ children }: any) => {
   const [theme, setTheme] = useState(initialThemeState.theme);
-
-  const localStorage = window.localStorage;
 
   useEffect(() => {
     const savedThemeLocal = localStorage.getItem("globalTheme");
